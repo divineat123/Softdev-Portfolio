@@ -92,7 +92,7 @@ const ProjectsPage = () => {
           <motion.div
             key={project.id}
             variants={itemVariants}
-            className={`transform-gpu ${
+            className={`transform-gpu  ${
               projects.length % 2 !== 0 && index === projects.length - 1 
                 ? 'md:col-start-1 md:col-span-2 flex justify-center' 
                 : ''
