@@ -5,17 +5,7 @@ import Button from "./Button";
 import { memo } from "react";
 
 const Hero = memo(() => {
-  const [text] = useTypewriter({
-    words: [
-      "Frontend Engineer.",
-      "Solidity Developer.",
-      // "Fullstack Web Developer.",
-      // "Graphic Designer.",
-    ],
-    loop: true,
-    delaySpeed: 3000,
-  });
-
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,14 +20,14 @@ const Hero = memo(() => {
           className="text-sm sm:text-base md:text-lg lg:text-xl 
           font-medium text-gray-600"
         >
-          Hi, the name is
+          Hi, I’m
         </h4>
 
         <h1
           className="font-outfit font-bold text-4xl sm:text-5xl md:text-6xl 
           lg:text-7xl xl:text-8xl tracking-tight"
         >
-          Ayodeji Atanda.
+          Divine Ezechukwu.
         </h1>
 
         <div
@@ -45,17 +35,17 @@ const Hero = memo(() => {
           text-gray-500 h-[60px] sm:h-[72px] md:h-[84px]"
         >
           <h2 className="inline-flex items-center">
-            {text}
-            <Cursor cursorColor="#0077b5" />
+            Software Developer
           </h2>
         </div>
 
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-600  leading-relaxed">
-          I’m a software engineer creating clean, responsive, and accessible web
-          experiences with React, Next.js, Tailwind CSS, and Web3. I build smart
-          contracts with Solidity, contribute to decentralized projects, and
-          enjoy mentoring new developers to make technology more usable and
-          inclusive for everyone.
+          I’m a software developer building clean, responsive, and accessible
+          web applications. Using React, Next.js, and Tailwind CSS on the
+          frontend, and Node.js, Express.js, and MongoDB on the backend, I
+          create scalable, user-friendly solutions that solve real problems. I focus on writing
+          maintainable code, optimizing performance, and continuously learning
+          to deliver high-quality digital products.
         </p>
 
         <div className="pt-6 lg:pt-0">

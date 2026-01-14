@@ -1,39 +1,40 @@
 // @ts-nocheck
 import React from "react";
 import {
-  SiNextdotjs,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
   SiTypescript,
+  SiReact,
+  SiNextdotjs,
   SiTailwindcss,
   SiFramer,
-  SiReact,
-  SiJavascript,
-  SiSolidity,
-  SiAxios,
-  SiEthers,
   SiGreensock,
-  SiReactrouter,
-  SiDaisyui,
-  SiUnsplash,
-  SiSanity,
-  SiOpenai,
-  SiCss3,
-  SiNetlify,
-  SiVercel,
-  SiDocker,
-  SiExpress,
+  SiRedux,
+  SiAxios,
   SiVite,
-  SiPostman,
-  SiSass,
+  SiNodedotjs,
+  SiExpress,
   SiMongodb,
+  SiPostman,
+  SiDocker,
+  SiVercel,
+  SiNetlify,
   SiCloudinary,
   SiChakraui,
   SiShadcnui,
-  SiRedux,
 } from "react-icons/si";
 
 const toolConfig = {
-  nextjs: { Icon: SiNextdotjs, color: "bg-black", label: "Next.js" },
+  // ===== Core Web =====
+  html: { Icon: SiHtml5, color: "bg-orange-500", label: "HTML5" },
+  css: { Icon: SiCss3, color: "bg-blue-500", label: "CSS3" },
+  javascript: { Icon: SiJavascript, color: "bg-yellow-400", label: "JavaScript" },
   typescript: { Icon: SiTypescript, color: "bg-blue-600", label: "TypeScript" },
+
+  // ===== Frontend =====
+  react: { Icon: SiReact, color: "bg-cyan-400", label: "React" },
+  nextjs: { Icon: SiNextdotjs, color: "bg-black", label: "Next.js" },
   tailwindcss: {
     Icon: SiTailwindcss,
     color: "bg-cyan-500",
@@ -44,37 +45,32 @@ const toolConfig = {
     color: "bg-purple-600",
     label: "Framer Motion",
   },
-  react: { Icon: SiReact, color: "bg-cyan-400", label: "React" },
-  javascript: {
-    Icon: SiJavascript,
-    color: "bg-yellow-400",
-    label: "JavaScript",
-  },
-  solidity: { Icon: SiSolidity, color: "bg-gray-800", label: "Solidity" },
-  axios: { Icon: SiAxios, color: "bg-purple-500", label: "Axios" },
-  "ethers.js": { Icon: SiEthers, color: "bg-blue-700", label: "Ethers.js" },
   gsap: { Icon: SiGreensock, color: "bg-green-500", label: "GSAP" },
-  "react-router": {
-    Icon: SiReactrouter,
-    color: "bg-red-500",
-    label: "React Router",
-  },
-  daisyui: { Icon: SiDaisyui, color: "bg-green-400", label: "DaisyUI" },
-  unsplash: { Icon: SiUnsplash, color: "bg-black", label: "Unsplash" },
-  sanity: { Icon: SiSanity, color: "bg-red-600", label: "Sanity" },
-  css: { Icon: SiCss3, color: "bg-blue-500", label: "CSS3" },
-  netlify: { Icon: SiNetlify, color: "bg-teal-500", label: "Netlify" },
-  vercel: { Icon: SiVercel, color: "bg-black", label: "Vercel" },
-  docker: { Icon: SiDocker, color: "bg-blue-600", label: "Docker" },
-  expressjs: { Icon: SiExpress, color: "bg-gray-700", label: "Express.js" },
+  redux: { Icon: SiRedux, color: "bg-purple-700", label: "Redux" },
+
+  // ===== Backend =====
+  nodejs: { Icon: SiNodedotjs, color: "bg-green-600", label: "Node.js" },
+  express: { Icon: SiExpress, color: "bg-gray-700", label: "Express.js" },
+  mongodb: { Icon: SiMongodb, color: "bg-green-600", label: "MongoDB" },
+
+  // ===== API / Networking =====
+  axios: { Icon: SiAxios, color: "bg-purple-500", label: "Axios" },
+
+  // ===== Tools & Platforms =====
   vite: { Icon: SiVite, color: "bg-purple-500", label: "Vite" },
   postman: { Icon: SiPostman, color: "bg-orange-500", label: "Postman" },
-  sass: { Icon: SiSass, color: "bg-pink-500", label: "Sass" },
-  mongodb: { Icon: SiMongodb, color: "bg-green-600", label: "MongoDB" },
-  cloudinary: { Icon: SiCloudinary, color: "bg-blue-500", label: "Cloudinary" },
+  docker: { Icon: SiDocker, color: "bg-blue-600", label: "Docker" },
+  vercel: { Icon: SiVercel, color: "bg-black", label: "Vercel" },
+  netlify: { Icon: SiNetlify, color: "bg-teal-500", label: "Netlify" },
+  cloudinary: {
+    Icon: SiCloudinary,
+    color: "bg-blue-500",
+    label: "Cloudinary",
+  },
+
+  // ===== UI Libraries =====
   chakraui: { Icon: SiChakraui, color: "bg-teal-600", label: "Chakra UI" },
   shadcnui: { Icon: SiShadcnui, color: "bg-gray-900", label: "shadcn/ui" },
-  redux: { Icon: SiRedux, color: "bg-purple-700", label: "Redux" },
 };
 
 const ToolIcon: React.FC<{ tool: string }> = ({ tool }) => {
@@ -95,7 +91,7 @@ const ToolIcon: React.FC<{ tool: string }> = ({ tool }) => {
     );
   }
 
-  // Fallback to text if no icon is found
+  // Fallback (safe + clean)
   return (
     <span className="inline-block px-2 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-md">
       {tool}

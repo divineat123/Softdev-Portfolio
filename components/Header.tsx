@@ -45,21 +45,21 @@ const Header = ({}: Props) => {
           network="x"
           bgColor="transparent"
           fgColor="#1DA1F2"
-          url="https://twitter.com/DEJIxICE"
+          url="https://x.com/DYNANIXw5"
           className="h-2 w-2"
         />
         <SocialIcon
           network="linkedin"
           bgColor="transparent"
           fgColor="#0077b5"
-          url="https://www.linkedin.com/in/ayodeji-atanda/"
+          url="https://www.linkedin.com/in/divine-ezechukwu-94602a307/"
           className="h-2 w-2"
         />
         <SocialIcon
           network="instagram"
           bgColor="transparent"
           fgColor=" #FFC0CB"
-          url="https://instagram.com/deji_ice?igshid=NTc4MTIwNjQ2YQ=="
+          url="https://www.instagram.com/dyna_nix/?hl=e"
           className="h-2 w-2"
         />
       </motion.div>

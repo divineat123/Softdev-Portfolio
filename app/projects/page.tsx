@@ -69,13 +69,13 @@ const ProjectsPage = () => {
           My Work
         </motion.p>
         <motion.h1
-          className="text-slate-800  md:text-4xl font-bold tracking-tight mb-6"
+          className="text-slate-800 md:text-4xl font-bold tracking-tight mb-6"
           variants={headerItemVariants}
         >
           Projects
         </motion.h1>
         <motion.p
-          className="text-sm  text-slate-600 max-w-xl italic mx-auto leading-relaxed"
+          className="text-sm text-slate-600 max-w-xl italic mx-auto leading-relaxed"
           variants={headerItemVariants}
         >
           A collection of projects that kept me up at night (in a good way),
@@ -92,10 +92,15 @@ const ProjectsPage = () => {
           <motion.div
             key={project.id}
             variants={itemVariants}
-      
-            className="transform-gpu"
+            className={`transform-gpu ${
+              projects.length % 2 !== 0 && index === projects.length - 1 
+                ? 'md:col-start-1 md:col-span-2 flex justify-center' 
+                : ''
+            }`}
           >
-            <ProjectCard project={project} />
+            <div className={projects.length % 2 !== 0 && index === projects.length - 1 ? 'w-full md:w-1/2' : ''}>
+              <ProjectCard project={project} />
+            </div>
           </motion.div>
         ))}
       </motion.section>

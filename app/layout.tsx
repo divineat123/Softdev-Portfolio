@@ -7,41 +7,44 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 import SVGLoader from "@/components/SVGloader";
 
 // Optimize font loading
-// const programme = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/Programme-Regular.woff2",
-//       weight: "400",
-//     },
-//   ],
-//   variable: "--font-outfit",
-//   preload: true,
-// });
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
 });
 
-// const montecatiniPro = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/MontecatiniPro-StrettoUltra.woff2",
-//       weight: "700",
-//     },
-//   ],
-//   variable: "--font-montecatiniPro",
-//   preload: true,
-// });
-
-const NowPlaying = dynamic(() => import("@/components/NowPlaying"), {
-  loading: () => <div className="h-6 bg-slate-900" />,
-});
-
+// -----------------------
+// Metadata
+// -----------------------
 export const metadata = {
-  viewport: { width: "device-width", initialScale: 1 },
-  title: "Ayodeji Atanda - Software Engineer Portfolio",
+  title: "Divine Ezechukwu - Software Developer Portfolio",
+  description:
+    "Divine Ezechukwu is a frontend and full-stack developer creating professional, scalable, and SEO-friendly websites and web applications that help businesses grow online.",
+  keywords: [
+    "Divine Ezechukwu",
+    "Software Developer",
+    "Frontend Developer",
+    "Full-Stack Developer",
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "Responsive Web Design",
+    "Web Development Portfolio",
+    "Portfolio Website",
+    "SEO Optimization",
+    "Web Applications",
+    "Freelance Developer",
+    "UI/UX",
+    "Performance Optimization",
+    "Professional Websites",
+    "Portfolio Showcase",
+    "Software Engineering",
+  ],
   verification: {
-    google: "ltfOnPx-NMzt2vBROfh-jAQr5R-U7ynE-3t3kmMTJGo",
+    google: "ltfOnPx-NMzt2vBROfh-jAQr5R-U7ynE-3t3kmMTJGo", // keep if this is your GA/site verification
   },
   alternates: {
     canonical: "/",
@@ -49,42 +52,6 @@ export const metadata = {
       "en-US": "/en-US",
     },
   },
-  description:
-    "Ayodeji Atanda - Software Engineer Portfolio: Creating professional, scalable, and SEO-friendly websites that establish a robust online presence for small businesses through innovative web and blockchain solutions.",
-  keywords: [
-    "Ayodeji Atanda",
-    "Deji ice",
-    "Lagos",
-    "Nigeria",
-    "JavaScript",
-    "React",
-    "Frontend Engineer",
-    "Smart Contracts",
-    "blockchain",
-    "Web3",
-    "Solidity",
-    "Ethers.js",
-    "Hardhat",
-    "Tailwind CSS",
-    "Web development",
-    "Frontend development",
-    "Frontend developer",
-    "Fullstack developer",
-    "Graphic designer",
-    "typescipt",
-    "Next.js",
-    "Web Development Portfolio",
-    "Web Performance Optimization",
-    "Portfolio Showcase",
-    "SEO-Friendly Websites",
-    "Software developer",
-    "Freelance",
-    "Portfolio website",
-    "HTML/CSS",
-    "Technical Skills",
-    "SEO Optimization",
-    "Web Developer",
-  ],
   robots: {
     googleBot: {
       index: true,
@@ -95,25 +62,33 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ayodeji Atanda - Software Engineer Portfolio",
+    title: "Divine Ezechukwu - Software Developer Portfolio",
     description:
-      "Ayodeji Atanda - Software Engineer Portfolio: Creating professional, scalable, and SEO-friendly websites that establish a robust online presence for small businesses through innovative web and blockchain solutions.",
-    creator: "@dejiXice",
+      "Divine Ezechukwu builds professional, scalable, and SEO-friendly websites and web applications that help businesses succeed online.",
+    creator: "@DYNANIXw5", // change to your own Twitter handle if you have one
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+// -----------------------
+// Viewport (Next.js 14 compliant)
+// -----------------------
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+// -----------------------
+// Root Layout Component
+// -----------------------
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={` ${outfit.variable}  font-sans scroll-smooth`}>
+    <html lang="en" className={`${outfit.variable} font-sans scroll-smooth`}>
       <head>
-        {/* <meta name="theme-color" content="#FAF9F6" /> */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
 
+      {/* Google Analytics */}
       <Script
         strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-2PKP3NR2VS"
@@ -128,8 +103,7 @@ export default function RootLayout({
       </Script>
 
       <body className="antialiased overflow-x-hidden bg-[#ebebf3]">
-        <SVGLoader/>
-        <NowPlaying />
+        <SVGLoader />
         <NavBar />
         <SmoothScrolling>
           <main className="relative">{children}</main>

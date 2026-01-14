@@ -8,7 +8,7 @@ type Props = {};
 
 const ContactMe = (props: Props) => {
   const handleClick = () => {
-    window.location.href = "mailto:ayodejiatanda1@gmail.com";
+    window.location.href = "mailto:divineezechu94@gmail.com";
   };
   return (
     <footer
@@ -29,13 +29,12 @@ const ContactMe = (props: Props) => {
         <p className="text-sm my-3 xl:mb-16 xl:text-xl  p-5 text-start md:text-center md:text-xl lg:text-3xl ">
           Ready to take your web projects to the next{" "}
           <span className="underline decoration-black decoration-2">level</span>
-          ? <br /> Let's collaborate and create exceptional user experiences
-          together.
+          ? <br /> Let's collaborate and build efficient, scalable, and reliable
+          software together.
           <br /> Contact me now and let's discuss how I can contribute to your
-          frontend development needs. Reach out and let's build something
-          amazing!
+          development needs. Reach out and let's create something impactful!
         </p>
-        <Button title="Say Hello"  />
+        <Button title="Say Hello" />
       </div>
       <div className=" absolute bottom-10 space-x-4 xl:space-y-5 xl:bottom-[11rem] xl:left-5 xl:space-x-0 xl:flex xl:flex-col xl:z-20 xl:fixed xl:items-center xl:justify-center xl:text-center">
         <SocialIcon
@@ -50,15 +49,15 @@ const ContactMe = (props: Props) => {
           network="github"
           bgColor="transparent"
           fgColor="#464646"
-          url="https://github.com/deji-ice"
+          url="https://github.com/divineat123"
           target="_blank"
           className="h-2 w-2 filter grayscale  hover:filter-none hover:animate-pulse transition duration-200 ease-in-out"
         />
         <SocialIcon
-          network="twitter"
+          network="x"
           bgColor="transparent"
           fgColor="#1DA1F2"
-          url="https://twitter.com/DEJIxICE"
+          url="https://x.com/DYNANIXw5"
           target="_blank"
           className="h-2 w-2 filter grayscale  hover:filter-none hover:animate-pulse transition duration-200 ease-in-out"
         />
@@ -66,7 +65,7 @@ const ContactMe = (props: Props) => {
           network="linkedin"
           bgColor="transparent"
           fgColor="#0077b5"
-          url="https://www.linkedin.com/in/ayodeji-atanda/"
+          url="https://www.linkedin.com/in/divine-ezechukwu-94602a307/"
           target="_blank"
           className="h-2 w-2 filter grayscale  hover:filter-none hover:animate-pulse transition duration-200 ease-in-out"
         />
@@ -74,14 +73,14 @@ const ContactMe = (props: Props) => {
           network="instagram"
           bgColor="transparent"
           fgColor="#e91578"
-          url="https://www.instagram.com/deji_ice/"
+          url="https://www.instagram.com/dyna_nix/?hl=en"
           target="_blank"
           className="h-2 w-2 filter grayscale  hover:filter-none hover:animate-pulse transition duration-200 ease-in-out"
         />
       </div>
       <p className="text-xs tracking-wide font-normal">
         Created by X user
-        <span className="font-semibold"> @dejixice</span> @2023
+        <span className="font-semibold"> @DYNANIXw5</span> © 2025
       </p>
     </footer>
   );

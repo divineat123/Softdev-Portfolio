@@ -5,18 +5,15 @@ import Image from "next/image";
 import { memo } from "react";
 
 const technologies = [
-  "Solidity",
-  "Ethers.js",
-  "Hardhat",
-  "Javascript",
-  "Typescript",
+  "JavaScript",
+  "TypeScript",
   "React",
+  "Next.js",
   "Tailwind CSS",
-  "NextJS",
-  "GSAP",
-  "Express.js",
+  "Framer Motion",
   "Node.js",
-  "MongoDb",
+  "Express.js",
+  "MongoDB",
 ];
 
 const About = memo(() => {
@@ -34,7 +31,7 @@ const About = memo(() => {
         mb-8 sm:mb-12 md:mb-16 mt-5 font-semibold text-gray-500 
         font-outfit tracking-wider"
       >
-       About Me
+        About Me
       </h2>
 
       <div
@@ -50,7 +47,7 @@ const About = memo(() => {
         >
           <Image
             src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1756303349/me_o5apj6.jpg"
-            alt="Ayodeji Atanda's"
+            alt="Divine Ezechukwu's"
             height={300}
             width={300}
             priority
@@ -63,25 +60,24 @@ const About = memo(() => {
         <div className="space-y-6 text-base sm:text-lg lg:text-xl px-6 md:px-16  lg:px-20">
           <div className="space-y-4">
             <p className="leading-relaxed">
-              Before diving into tech, I started with graphics design, which
-              sparked my love for clean, beautiful UIs. Now, I blend that design
-              sense with frontend and blockchain development to build digital
-              products people enjoy using.
+              Before diving into tech, I started with UI/UX design, where I
+              developed a passion for creating clean and intuitive interfaces. I
+              now apply that foundation to software development, building
+              digital products that are both functional and user-centric.
             </p>
             <p className="leading-relaxed">
-              I’m always curious and growing — currently adding Go to my stack
-              while staying active in the Web3 space with Solidity and dApps.
-              Teaching and mentoring new developers keeps me sharp and grounded
-              too.
+              I’m always curious and growing — currently adding Rust to my stack
+              while staying active in software development, continuously
+              improving my skills and building practical experience.
             </p>
             <p className="leading-relaxed">
-              When I’m not coding, you’ll find me swimming, vibing to music, or
-              watching movies that spark new ideas. They help me unwind and feed
-              my creativity in unexpected ways.
+              When I’m not coding, you’ll find me playing chess, vibing to
+              music, or watching movies that spark new ideas. They help me
+              unwind and feed my creativity in unexpected ways.
             </p>
           </div>
 
-          <div className="pt-4 ">
+          <div className="pt-9 ">
             <h3 className="text-base mb-3 font-semibold text-gray-800">
               Technologies I work with:
             </h3>

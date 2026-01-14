@@ -18,6 +18,5 @@ This is a personal portfolio website to showcase my projects, skills, and experi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/deji-ice/Portfoli0.git
-   cd Portfoli0
-   
+   git clone https://github.com/divineat123/Softdev-Portfolio.git
+   cd Softdev-Portfolio

@@ -86,20 +86,7 @@ const RecentProjects = () => {
                 >
                   <div className="pt-6 pb-4 space-y-4">
                     {/* Project Image */}
-                    <div className=" w-full h-48 rounded-lg overflow-hidden bg-gray-100">
-                      <Image
-                        src={
-                          typeof project.projectImage === "string"
-                            ? project.projectImage
-                            : project.projectImage.src
-                        }
-                        width={500}
-                        height={300}
-                        alt={project.projectName}
-                        loading="lazy"
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
+                
 
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {project.projectDescription}
