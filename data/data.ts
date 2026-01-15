@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "A web application replicating the look and feel of Spotify’s interface, allowing users to browse and play music through an intuitive, responsive design. The project highlights skills in crafting clean, modern UIs, implementing audio playback functionality, and creating a seamless user experience. While it mimics Spotify’s style, it focuses on frontend interactivity and music playback.",
     demoLink: "https://spotify-murex-sigma.vercel.app/",
     githubLink: "https://github.com/divineat123/Spotify",
-    tools: ["javascript", "TailwindCSS", "React"],
+    tools: ["javascript","CSS", "TailwindCSS", "React", "Vite"],
   },
  
 ];

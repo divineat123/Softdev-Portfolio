@@ -2,11 +2,13 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Script from "next/script";
 import { Outfit } from "next/font/google";
-import dynamic from "next/dynamic";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import SVGLoader from "@/components/SVGloader";
+import type { Metadata, Viewport } from "next";
 
-// Optimize font loading
+// -----------------------
+// Font
+// -----------------------
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
@@ -15,10 +17,10 @@ const outfit = Outfit({
 // -----------------------
 // Metadata
 // -----------------------
-export const metadata = {
-  title: "Divine Ezechukwu - Software Developer Portfolio",
+export const metadata: Metadata = {
+  title: "Divine Ezechukwu – Software Developer Portfolio",
   description:
-    "Divine Ezechukwu is a frontend and full-stack developer creating professional, scalable, and SEO-friendly websites and web applications that help businesses grow online.",
+    "Divine Ezechukwu is a frontend and full-stack developer building clean, responsive, and SEO-friendly websites and web applications.",
   keywords: [
     "Divine Ezechukwu",
     "Software Developer",
@@ -33,55 +35,44 @@ export const metadata = {
     "CSS",
     "Responsive Web Design",
     "Web Development Portfolio",
-    "Portfolio Website",
-    "SEO Optimization",
-    "Web Applications",
-    "Freelance Developer",
     "UI/UX",
-    "Performance Optimization",
-    "Professional Websites",
-    "Portfolio Showcase",
-    "Software Engineering",
+    "SEO Optimization",
   ],
   verification: {
-    google: "ltfOnPx-NMzt2vBROfh-jAQr5R-U7ynE-3t3kmMTJGo", // keep if this is your GA/site verification
-  },
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-    },
-  },
-  robots: {
-    googleBot: {
-      index: true,
-    },
+    google: "ltfOnPx-NMzt2vBROfh-jAQr5R-U7ynE-3t3kmMTJGo",
   },
   icons: {
     icon: "/favicon-32x32.png",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Divine Ezechukwu - Software Developer Portfolio",
+    title: "Divine Ezechukwu – Software Developer Portfolio",
     description:
-      "Divine Ezechukwu builds professional, scalable, and SEO-friendly websites and web applications that help businesses succeed online.",
-    creator: "@DYNANIXw5", // change to your own Twitter handle if you have one
+      "Frontend and full-stack developer creating scalable, high-performance web applications.",
+    creator: "@DYNANIXw5",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-
 // -----------------------
-// Viewport (Next.js 14 compliant)
+// Viewport
 // -----------------------
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
 
 // -----------------------
-// Root Layout Component
+// Root Layout
 // -----------------------
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${outfit.variable} font-sans scroll-smooth`}>
       <head>
@@ -91,15 +82,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Google Analytics */}
       <Script
         strategy="lazyOnload"
-        src="https://www.googletagmanager.com/gtag/js?id=G-2PKP3NR2VS"
+        src="https://www.googletagmanager.com/gtag/js?id=G-X843JX6GM7"
       />
       <Script id="google-analytics" strategy="lazyOnload">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-2PKP3NR2VS');
-        `}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X843JX6GM7');
+  `}
       </Script>
 
       <body className="antialiased overflow-x-hidden bg-[#ebebf3]">

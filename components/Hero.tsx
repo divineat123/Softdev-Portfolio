@@ -40,7 +40,7 @@ const Hero = memo(() => {
         </div>
 
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-600  leading-relaxed">
-          I’m a software developer building clean, responsive, and accessible
+          I’m a software developer dedicated to building clean, responsive, and accessible
           web applications. Using React, Next.js, and Tailwind CSS on the
           frontend, and Node.js, Express.js, and MongoDB on the backend, I
           create scalable, user-friendly solutions that solve real problems. I focus on writing
