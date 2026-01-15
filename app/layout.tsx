@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "SEO Optimization",
   ],
   verification: {
-    google: "ltfOnPx-NMzt2vBROfh-jAQr5R-U7ynE-3t3kmMTJGo",
+    google: "_55-55C3dmR-Yz8wPik_pWj10YvDr5tBvN5y2M0RjSQ",
   },
   icons: {
     icon: "/favicon-32x32.png",
