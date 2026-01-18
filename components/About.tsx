@@ -46,12 +46,12 @@ const About = memo(() => {
           className="flex-shrink-0"
         >
           <Image
-            src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1756303349/me_o5apj6.jpg"
+            src="https://res.cloudinary.com/drcmeivdx/image/upload/v1768694293/Untitled_design_dtwtsi.jpg"
             alt="Divine Ezechukwu's"
-            height={300}
-            width={300}
+            height={400}
+            width={400}
             priority
-            className="border-dashed border-2 border-gray-400 object-cover 
+            className=" border-gray-400 object-cover 
             rounded-lg shadow-lg transition-transform duration-300 
             hover:scale-105"
           />
