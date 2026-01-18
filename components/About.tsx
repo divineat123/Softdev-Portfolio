@@ -48,8 +48,8 @@ const About = memo(() => {
           <Image
             src="https://res.cloudinary.com/drcmeivdx/image/upload/v1768694293/Untitled_design_dtwtsi.jpg"
             alt="Divine Ezechukwu's"
-            height={400}
-            width={400}
+            height={350}
+            width={350}
             priority
             className=" border-gray-400 object-cover 
             rounded-lg shadow-lg transition-transform duration-300 
